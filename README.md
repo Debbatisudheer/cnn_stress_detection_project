@@ -10,6 +10,8 @@ The model is deployed as a **web application using Streamlit**, so users can upl
 
 🔗 [Live demo of the project](https://cnnstressdetectionproject-lgdtggbwp6s2njmp5qpadg.streamlit.app//)
 
+![Workflow Diagram](workflow.png)
+
 ---
 
 ## 🔍 What We Did Step by Step
@@ -90,5 +92,6 @@ Interactive web app with Streamlit
 
 📄 License
 This project is licensed under MIT License - see LICENSE for details.
+
 
 

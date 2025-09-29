@@ -65,21 +65,21 @@ The model is deployed as a **web application using Streamlit**, so users can upl
    ```bash
    git clone https://github.com/Debbatisudheer/cnn_stress_detection_project.git
    cd cnn_stress_detection_project
-Create and activate a virtual environment:
 
-bash
-Copy code
+   
+Create and activate a virtual environment:
+```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 Install dependencies:
 
-bash
-Copy code
+
 pip install -r requirements.txt
+```
 Run the Streamlit app:
 
-bash
-Copy code
+
 streamlit run app.py
 🎯 Key Features
 Real-time stress detection from facial expressions
@@ -92,3 +92,4 @@ Interactive web app with Streamlit
 
 📄 License
 This project is licensed under MIT License - see LICENSE for details.
+

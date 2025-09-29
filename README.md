@@ -71,12 +71,10 @@ Create and activate a virtual environment:
 ```
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+
 Install dependencies:
 
-
 pip install -r requirements.txt
-```
 Run the Streamlit app:
 
 
@@ -92,4 +90,5 @@ Interactive web app with Streamlit
 
 📄 License
 This project is licensed under MIT License - see LICENSE for details.
+
 

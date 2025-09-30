@@ -1,7 +1,7 @@
 # 🧠 CNN-Based Stress Detection Project
 
 
-```project_2/
+project_2/
 │
 ├── src/
 │   ├── data_loader.py        # Loads dataset and applies augmentation
@@ -112,6 +112,7 @@ Interactive web app with Streamlit
 
 📄 License
 This project is licensed under MIT License - see LICENSE for details.
+
 
 
 

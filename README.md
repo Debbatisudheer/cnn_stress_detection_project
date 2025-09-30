@@ -116,8 +116,15 @@ project_2/
 ├── run.py                   # Optional script to run app or pipeline
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
+```
 
+.
 
+Locally: You run python run.py → the train_model() function is executed, training starts, and the model gets saved.
+
+During deployment: Streamlit (or any other script) imports the train_model function to use it, but the training doesn’t start again because it’s inside the if __name__ == "__main__": block — which only runs when the file is executed directly.
+
+So basically, this prevents unwanted retraining and keeps your workflow safe and modular.
 
 
 

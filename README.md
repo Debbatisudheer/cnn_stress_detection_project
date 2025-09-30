@@ -1,5 +1,23 @@
 # 🧠 CNN-Based Stress Detection Project
 
+
+```project_2/
+│
+├── src/
+│   ├── data_loader.py        # Loads dataset and applies augmentation
+│   ├── model.py              # CNN architecture / transfer learning
+│   ├── train.py              # Training script
+│   ├── predict.py            # Prediction script
+│   └── train_transfer.py     # Transfer learning script
+│
+├── saved_models/
+│   └── cnn_stress_model.h5   # Trained model
+│
+├── app.py                    # Streamlit web app
+├── requirements.txt          # Project dependencies
+└── README.md
+
+
 ## 📌 Project Overview
 
 This project is a **facial expression-based stress detection system**. The goal is to automatically detect stress levels in a person using a deep learning model trained on facial images.  
@@ -94,6 +112,7 @@ Interactive web app with Streamlit
 
 📄 License
 This project is licensed under MIT License - see LICENSE for details.
+
 
 
 

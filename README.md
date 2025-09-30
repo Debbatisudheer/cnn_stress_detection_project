@@ -1,33 +1,5 @@
 # 🧠 CNN-Based Stress Detection Project
 
-
-## Project Structure
-
-```python
-project_2/
-│
-├── archive/
-│   ├── train/               # Training images organized in class folders
-│   └── test/                # Testing images organized in class folders
-│
-├── src/
-│   ├── data_loader.py       # Loads dataset and applies augmentation
-│   ├── evaluate.py          # Evaluates model performance
-│   ├── model.py             # CNN architecture / transfer learning
-│   ├── train.py             # Training script (from scratch)
-│   ├── predict.py           # Prediction script for new images
-│   └── train_transfer.py    # Transfer learning training script
-│
-├── saved_models/
-│   ├── cnn_stress_model.h5  # Trained CNN model
-│
-├── app.py                   # Streamlit web application
-├── run.py                   # Optional script to run app or pipeline
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
-
-----------------------
-
 ## 📌 Project Overview
 
 This project is a **facial expression-based stress detection system**. The goal is to automatically detect stress levels in a person using a deep learning model trained on facial images.  
@@ -120,8 +92,31 @@ Uses CNN and transfer learning for better accuracy
 
 Interactive web app with Streamlit
 
-📄 License
-This project is licensed under MIT License - see LICENSE for details.
+## Project Structure
+
+```python
+project_2/
+│
+├── archive/
+│   ├── train/               # Training images organized in class folders
+│   └── test/                # Testing images organized in class folders
+│
+├── src/
+│   ├── data_loader.py       # Loads dataset and applies augmentation
+│   ├── evaluate.py          # Evaluates model performance
+│   ├── model.py             # CNN architecture / transfer learning
+│   ├── train.py             # Training script (from scratch)
+│   ├── predict.py           # Prediction script for new images
+│   └── train_transfer.py    # Transfer learning training script
+│
+├── saved_models/
+│   ├── cnn_stress_model.h5  # Trained CNN model
+│
+├── app.py                   # Streamlit web application
+├── run.py                   # Optional script to run app or pipeline
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
+
 
 
 

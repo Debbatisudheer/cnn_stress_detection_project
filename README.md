@@ -26,7 +26,7 @@ project_2/
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
 
-
+----------------------
 
 ## 📌 Project Overview
 
@@ -122,6 +122,7 @@ Interactive web app with Streamlit
 
 📄 License
 This project is licensed under MIT License - see LICENSE for details.
+
 
 
 

@@ -152,7 +152,20 @@ So basically, this prevents unwanted retraining and keeps your workflow safe and
         epochs=50,   # you can change this to 100, 200, etc.
         validation_data=test_gen,
         callbacks=callbacks
-    ) and it returns the history and as well as model 
+    ) and it returns the history and as well as model
+
+   Key Difference:
+
+Python: if __name__ == "__main__": is a conditional check to decide whether to run code when file is executed directly.
+
+Go: func main() is the entry point where program execution always begins.
+
+Think like this 👇
+
+Python: "Should I run this file directly or not?"
+
+Go: "Start here always!"
+
 
 
 

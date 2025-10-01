@@ -72,13 +72,15 @@ The model is deployed as a **web application using Streamlit**, so users can upl
 
    
 Create and activate a virtual environment:
-```
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+```bash
 Install dependencies:
 
 pip install -r requirements.txt
+
+```bash
 Run the Streamlit app:
 
 
@@ -125,6 +127,7 @@ Locally: You run python run.py → the train_model() function is executed, train
 During deployment: Streamlit (or any other script) imports the train_model function to use it, but the training doesn’t start again because it’s inside the if __name__ == "__main__": block — which only runs when the file is executed directly.
 
 So basically, this prevents unwanted retraining and keeps your workflow safe and modular.
+
 
 
 

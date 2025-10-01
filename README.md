@@ -110,7 +110,6 @@ project_2/
 │   ├── evaluate.py          # Evaluates model performance
 │   ├── model.py             # CNN architecture / transfer learning
 │   ├── train.py             # Training script (from scratch)
-│   ├── predict.py           # Prediction script for new images
 │   └── train_transfer.py    # Transfer learning training script
 │
 ├── saved_models/
@@ -119,6 +118,7 @@ project_2/
 ├── app.py                   # Streamlit web application
 ├── run.py                   # Optional script to run app or pipeline
 ├── requirements.txt         # Python dependencies
+├── predict.py               # Prediction script for new images
 └── README.md                # Project documentation
 ```
 
@@ -131,6 +131,13 @@ During deployment: Streamlit (or any other script) imports the train_model funct
 So basically, this prevents unwanted retraining and keeps your workflow safe and modular.
 
 
+1. code flow:
+   ```bash
+   run.py
+        │ 
+        └── train.py
+                   │ 
+                   └── data_loader.py , model.py
 
 
 

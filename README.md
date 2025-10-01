@@ -77,15 +77,16 @@ The model is deployed as a **web application using Streamlit**, so users can upl
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-Install dependencies:
+3. Install dependencies:
 
-pip install -r requirements.txt
-
-
-Run the Streamlit app:
+   ```bash
+   pip install -r requirements.txt
 
 
-streamlit run app.py
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   
 🎯 Key Features
 Real-time stress detection from facial expressions
 
@@ -95,7 +96,7 @@ Uses CNN and transfer learning for better accuracy
 
 Interactive web app with Streamlit
 
-## Project Structure
+1. ## Project Structure
 
 ```python
 project_2/
@@ -121,13 +122,14 @@ project_2/
 └── README.md                # Project documentation
 ```
 
-.
+
 
 Locally: You run python run.py → the train_model() function is executed, training starts, and the model gets saved.
 
 During deployment: Streamlit (or any other script) imports the train_model function to use it, but the training doesn’t start again because it’s inside the if __name__ == "__main__": block — which only runs when the file is executed directly.
 
 So basically, this prevents unwanted retraining and keeps your workflow safe and modular.
+
 
 
 

@@ -15,3 +15,11 @@ def evaluate_model(model_path, test_generator):
 
     print("Confusion Matrix:")
     print(confusion_matrix(y_true, y_pred))
+
+if __name__ == "__main__":
+    from data_loader import load_data  # import your data loader
+    test_dir = "../archive/test"       # path to your test folder
+    test_gen, _ = load_data(train_dir=test_dir, test_dir=test_dir)  # just to get test generator
+
+    model_path = "../saved_models/cnn_stress_model.h5"
+    evaluate_model(model_path, test_gen)

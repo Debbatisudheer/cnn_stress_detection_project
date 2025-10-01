@@ -142,12 +142,18 @@ So basically, this prevents unwanted retraining and keeps your workflow safe and
 
 1. run.py
    ```bash
-   --> entry point --> we are brining the function train() from train.py --> we are using if __name__ == "__main__": to run directly(terminal) inside this statement, without this python would start training automatically just because we imported the file, we can import functions/classes without triggering code , no wanted tranings start automatically, for example: if straemlit app or api imports train model it wont start training eveytime the server starts if only use the function when needed. --> train_dir, test_dir  holdes images path , train_model(train_dir, test_dir, resume=True)  this takes those path for the traning and it returns model, history.def train_model(train_dir, test_dir, saved_model_path="saved_models/cnn_stress_model.h5", resume=False): this function takes those paths and save the model and also load_data(train_dir, test_dir) function will takes that images path and returns train_generator, test_generator and it imports the build_cnn() function and returns the model and we have callbacks and  this function will start training the model model.fit(
+   --> entry point --> we are brining the function train() from train.py
+   --> we are using if __name__ == "__main__": to run directly(terminal) inside this statement, without this python would start training automatically just because we imported the file, we can import functions/classes without  triggering code , no wanted tranings start automatically, for example: if straemlit app or api imports train model it wont start training eveytime the server starts if only use the function when needed.
+   --> train_dir, test_dir  holdes images path , train_model(train_dir, test_dir, resume=True)  this takes those path for the traning and it returns model,
+   ---> history.def train_model(train_dir, test_dir, saved_model_path="saved_models/cnn_stress_model.h5", resume=False): this function takes those paths and save the model
+   --> also load_data(train_dir, test_dir) function will takes that images path and returns train_generator, test_generator
+   -->  it imports the build_cnn() function and returns the model and we have callbacks and  this function will start training the model model.fit(
         train_gen,
         epochs=50,   # you can change this to 100, 200, etc.
         validation_data=test_gen,
         callbacks=callbacks
     ) and it returns the history and as well as model 
+
 
 
 
